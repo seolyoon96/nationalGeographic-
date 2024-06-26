@@ -1,0 +1,191 @@
+#wrap {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    padding-top: 335px;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1001;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: auto;
+    height: 335px;
+    padding: 40px 60px 30px;
+    color: $txtDefult;
+    mix-blend-mode: difference;
+
+    &.active {
+        height: 100px;
+        // background: #fff;
+        #logo {
+            font-size: 2rem;
+            br {
+                display: none;
+            }
+        }
+        h3 {
+            display: none;
+        }
+    }
+
+    #logo {
+        font-family: 'Yeseva One', serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 9.0625rem;
+        line-height: 90%;
+        // a{text-decoration: none;}
+        transition: all 1s;
+    }
+
+    #gnb {
+        display: flex;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        margin-top: -20px;
+
+        a {
+            display: block;
+            padding: 20px 30px;
+            color: $txtDefult;
+
+            &:last-child {
+                padding-right: 0;
+            }
+        }
+    }
+
+    h3 {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(-30%, -10%);
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 110%;
+    }
+
+    .txt-whtie {
+        color: #fff;
+    }
+}
+
+// header
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 60px;
+    background: $main;
+
+    .foot-hd {
+        width: 100%;
+        margin: 0 0 80px 60px;
+        white-space: pre-line;
+
+        span {
+            font-size: 250px;
+            color: $white;
+            line-height: 1;
+        }
+    }
+
+    // foot-hd
+
+    .foot-ft {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        height: auto;
+        padding: 0 80px;
+
+        .ft-txt {
+            p {
+                width: 680px;
+                height: auto;
+            }
+        }
+
+        .ft-botton {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 240px;
+
+            .ft-link {
+                display: flex;
+                align-items: center;
+
+                li {
+                    padding: 0 20px;
+                    font-size: 1.25rem;
+                    height: 10px;
+                    line-height: 10px;
+                    border-right: 1px solid $Defult;
+
+                    &:nth-child(4)::before {
+                        content: '\f082';
+                        font-weight: 400;
+                        font-family: 'Font Awesome 6 Brands';
+                        font-size: 24px;
+                    }
+
+                    &:nth-child(5)::before {
+                        content: '\f16d';
+                        font-weight: 400;
+                        font-family: 'Font Awesome 6 Brands';
+                        font-size: 24px;
+                    }
+
+                    &:last-child::before {
+                        content: '\f167';
+                        font-weight: 400;
+                        font-family: 'Font Awesome 6 Brands';
+                        font-size: 24px;
+                    }
+
+                    &:nth-child(3),
+                    &:nth-child(4),
+                    &:nth-child(5),
+                    &:last-child {
+                        padding: 0 0 0 20px;
+                        border-right: 0;
+                    }
+                }
+            }
+
+            // ft-link
+
+            span {
+                margin-top: 100px;
+                padding: 0 20px;
+            }
+
+            .ft-family {
+                display: flex;
+                align-items: center;
+
+                img {
+                    padding: 0 10px;
+                }
+            }
+        }
+
+        // ft-botton
+    }
+
+    // foot-ft
+}
+
+// footer
+
+// common
